@@ -418,6 +418,11 @@ ul,ol{list-style:none}
   .feed__top span:nth-child(2),.feed__bottom span:first-child{display:none}
   .hero{padding-bottom:60px}
 }
+@media (max-width:640px){
+  /* hero feed labels collide once the frame is narrow — keep only the timecode row */
+  .feed__bottom .feed__hint{display:none}
+  .feed__bottom{justify-content:space-between}
+}
 @media (max-width:520px){
   .services__grid{grid-template-columns:1fr}
   .svc{min-height:0}
