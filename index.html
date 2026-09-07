@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Udit Punjabi — AI systems, automation & AI film. Mumbai.</title>
+<meta name="description" content="Udit Punjabi builds agentic AI systems, automation pipelines, AI-generated video and brand websites for companies that want to move faster. Mumbai, India.">
+<meta property="og:title" content="Udit Punjabi — Agents that do the work. Films that sell it.">
+<meta property="og:description" content="AI & automation engineer with a marketing spine. Agentic systems, AI video, CRM automation, dashboards, 3D.">
+<meta property="og:image" content="assets/img/udit.jpg">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b10'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23ff6b1a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ─────────── Preloader ─────────── -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__frame">
+    <span class="loader__corner tl"></span><span class="loader__corner tr"></span>
+    <span class="loader__corner bl"></span><span class="loader__corner br"></span>
+    <div class="loader__top mono"><span class="rec"><i></i>REC</span><span id="loaderClock">00:00:00:00</span></div>
+    <div class="loader__name">
+      <span class="loader__word">UDIT</span>
+      <span class="loader__word">PUNJABI</span>
+    </div>
+    <div class="loader__bottom mono">
+      <span>CAM 01 · MUMBAI</span>
+      <span class="loader__pct"><span id="loaderPct">0</span>%</span>
+    </div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+</div>
+
+<!-- ─────────── Cursor ─────────── -->
+<div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+<!-- ─────────── Nav ─────────── -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand" data-cursor="">
+    <span class="nav__mark"><i></i></span>
+    <span class="nav__brandtext">Udit Punjabi</span>
+  </a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#work" data-cursor="">Work</a>
+    <a href="#reels" data-cursor="">AI film</a>
+    <a href="#services" data-cursor="">Services</a>
+    <a href="#about" data-cursor="">About</a>
+    <a href="#experience" data-cursor="">Experience</a>
+  </nav>
+  <div class="nav__right">
+    <span class="nav__time mono"><span class="dot-live"></span>Mumbai <span id="navClock">--:--</span></span>
+    <a href="#contact" class="btn btn--sm magnetic" data-cursor=""><span>Let's talk</span></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <a href="#work">Work</a>
+  <a href="#reels">AI film</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+  <div class="menu__foot mono">
+    <a href="mailto:uditpunjabi234@gmail.com">uditpunjabi234@gmail.com</a>
+    <a href="tel:+917600816559">+91 76008 16559</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ─────────── Hero ─────────── -->
+<section class="hero" id="hero">
+  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="feed" aria-hidden="true">
+    <span class="feed__corner tl"></span><span class="feed__corner tr"></span>
+    <span class="feed__corner bl"></span><span class="feed__corner br"></span>
+    <div class="feed__top mono">
+      <span class="rec"><i></i>LIVE</span>
+      <span>CAM 01 · STUDIO / CONTROL ROOM</span>
+      <span id="heroClock">00:00:00:00</span>
+    </div>
+    <div class="feed__bottom mono">
+      <span>19.0760° N, 72.8777° E</span>
+      <span class="feed__hint">SCROLL TO ENTER</span>
+      <span>AI · AUTOMATION · FILM</span>
+    </div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow mono reveal-line">
+      <span>Udit Punjabi</span><span class="sep">/</span><span>AI &amp; automation engineer</span><span class="sep">/</span><span>Mumbai</span>
+    </p>
+    <h1 class="hero__title">
+      <span class="hero__line"><span class="split">Agents that</span></span>
+      <span class="hero__line"><span class="split">do the work.</span></span>
+      <span class="hero__line hero__line--accent"><span class="split">Films that sell it.</span></span>
+    </h1>
+    <div class="hero__row">
+      <div class="hero__chip reveal-up">
+        <img src="assets/img/udit.jpg" alt="Udit Punjabi" width="56" height="56">
+        <div>
+          <strong>Associate Manager, Illuminati Media</strong>
+          <span>Building agentic AI systems, automation pipelines and AI video for brands that want to move faster.</span>
+        </div>
+      </div>
+      <div class="hero__cta reveal-up">
+        <a href="#work" class="btn btn--primary magnetic" data-cursor="View"><span>See the work</span></a>
+        <a href="#reels" class="btn btn--ghost magnetic" data-cursor="Play"><span>Watch the films</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Ticker ─────────── -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Agentic AI</span><i></i><span>Automation pipelines</span><i></i><span>AI film &amp; UGC ads</span><i></i><span>CRM &amp; back-office</span><i></i><span>Dashboards</span><i></i><span>Brand websites</span><i></i><span>3D visualisation</span><i></i><span>Prompt engineering</span><i></i>
+    <span>Agentic AI</span><i></i><span>Automation pipelines</span><i></i><span>AI film &amp; UGC ads</span><i></i><span>CRM &amp; back-office</span><i></i><span>Dashboards</span><i></i><span>Brand websites</span><i></i><span>3D visualisation</span><i></i><span>Prompt engineering</span><i></i>
+  </div>
+</div>
+
+<!-- ─────────── About ─────────── -->
+<section class="about section" id="about">
+  <div class="section__head">
+    <span class="eyebrow mono">About</span>
+    <h2 class="h2 split-words">Marketing and PR taught me what moves people. Engineering taught me how to ship it.</h2>
+  </div>
+  <div class="about__grid">
+    <figure class="about__photo" data-parallax="0.08">
+      <img src="assets/img/udit.jpg" alt="Udit Punjabi, portrait" loading="lazy">
+      <figcaption class="mono">
+        <span>UDIT PUNJABI · 21</span>
+        <span>MUMBAI, IN</span>
+      </figcaption>
+    </figure>
+    <div class="about__text">
+      <p class="lead split-words">I started in brand strategy: creator partnerships at Wondrlab India, luxury positioning at Atelier Ashiesh Shah, and my family's candle studio. Then I went inside the tools. Now I architect AI-native workflows at Illuminati Media, where LLMs, data pipelines and human creativity meet.</p>
+      <p class="split-words">Production prompt frameworks with structured outputs and multi-step agents. End-to-end automation in Python, REST APIs, n8n and Make. Retrieval systems tuned for real business problems, not demos. And the other half of me still makes the film: AI-generated ads, brand shorts and auto-edited reels that turn raw footage into something people actually watch.</p>
+      <p class="about__sign split-words">If it can be modelled, automated or made cinematic, I'm building it.</p>
+      <ul class="stats">
+        <li><strong data-count="15">0</strong><span>projects shipped</span></li>
+        <li><strong data-count="5">0</strong><span>AI films for brands</span></li>
+        <li><strong data-count="2">0</strong><span>client sites live</span></li>
+        <li><strong data-count="3">0</strong><span>frontier model stacks</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Services ─────────── -->
+<section class="services section" id="services">
+  <div class="section__head">
+    <span class="eyebrow mono">What I do</span>
+    <h2 class="h2 split-words">Six things I get hired for.</h2>
+  </div>
+  <div class="services__grid">
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="6"/><circle cx="8" cy="12" r="3"/><circle cx="40" cy="12" r="3"/><circle cx="8" cy="36" r="3"/><circle cx="40" cy="36" r="3"/><path d="M11 14l8 6M37 14l-8 6M11 34l8-6M37 34l-8-6"/></svg></div>
+      <h3>Agentic AI &amp; automation</h3>
+      <p>Multi-step agents, RAG systems and prompt frameworks that run on Claude, GPT and Gemini with cost-aware routing and evals. Pipelines in Python, n8n and Make that delete manual ops.</p>
+      <ul class="svc__tags mono"><li>Claude</li><li>RAG</li><li>n8n</li><li>Python</li></ul>
+    </article>
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M20 18v12l10-6z"/></svg></div>
+      <h3>AI film &amp; content marketing</h3>
+      <p>Brand films, UGC-style ads and shorts generated with Veo, Kling and Sora, then cut, graded and captioned. Content that ships weekly, not quarterly.</p>
+      <ul class="svc__tags mono"><li>Veo</li><li>Kling</li><li>ComfyUI</li><li>ffmpeg</li></ul>
+    </article>
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><path d="M8 40V22l16-14 16 14v18"/><path d="M20 40V28h8v12"/></svg></div>
+      <h3>Websites &amp; brand systems</h3>
+      <p>Fast, animated sites for people and businesses: a civic portal for a Mumbai ward, a counselling practice, a candle house. Designed and coded end to end.</p>
+      <ul class="svc__tags mono"><li>Next.js</li><li>GSAP</li><li>Three.js</li></ul>
+    </article>
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><rect x="6" y="8" width="36" height="10" rx="2"/><rect x="6" y="20" width="36" height="10" rx="2"/><rect x="6" y="32" width="24" height="8" rx="2"/></svg></div>
+      <h3>CRM &amp; back-office automation</h3>
+      <p>Deal pipelines, invoice generation, receivables chasing and inbox triage that read your books and act. Built on Supabase, Prisma and Gmail APIs with one-tap human approval.</p>
+      <ul class="svc__tags mono"><li>Supabase</li><li>Prisma</li><li>Gmail API</li></ul>
+    </article>
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><path d="M6 40h36"/><path d="M10 34l8-10 8 6 6-12 8 8"/></svg></div>
+      <h3>Data dashboards</h3>
+      <p>Sales, receivables, complaints, ad spend and trading data turned into one screen your team actually opens. Anomalies flagged before someone asks.</p>
+      <ul class="svc__tags mono"><li>Postgres</li><li>React</li><li>Tally</li></ul>
+    </article>
+    <article class="svc tilt" data-cursor="">
+      <div class="svc__icon"><svg viewBox="0 0 48 48"><path d="M24 4l18 10v20L24 44 6 34V14z"/><path d="M24 24l18-10M24 24v20M24 24L6 14"/></svg></div>
+      <h3>3D &amp; motion</h3>
+      <p>Real-estate walkthroughs, product renders and motion graphics in Blender and WebGL. The same eye that cuts the films, applied to space and objects.</p>
+      <ul class="svc__tags mono"><li>Blender</li><li>WebGL</li><li>Motion</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ─────────── Work ─────────── -->
+<section class="work" id="work">
+  <div class="work__pin">
+    <div class="section__head work__head">
+      <div class="work__title">
+        <span class="eyebrow mono">Selected work</span>
+        <h2 class="h2">Shipped, live, in use.</h2>
+      </div>
+      <p class="work__hint mono"><span class="work__count"><span id="workIdx">01</span> / <span id="workTotal">12</span></span><span class="work__scrollhint">Scroll to move sideways</span></p>
+    </div>
+    <div class="work__track" id="workTrack">
+
+      <article class="card card--wide" data-cursor="Visit">
+        <a class="card__media" href="https://gaurangjhaveri.in/" target="_blank" rel="noopener">
+          <img src="assets/img/ward217.jpg" alt="Ward 217 public grievance portal" loading="lazy">
+        </a>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Civic portal · Live</span><span>gaurangjhaveri.in</span></div>
+          <h3>Ward 217 grievance &amp; communication portal</h3>
+          <p>A citizen-facing portal for a Mumbai corporator: register a complaint on web or WhatsApp, track it, and reach the representative. Complaints answered inside 48 hours.</p>
+          <ul class="card__tags mono"><li>Web</li><li>WhatsApp</li><li>AI triage</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="Visit">
+        <a class="card__media card__media--light" href="https://wellnesswave.org.in/" target="_blank" rel="noopener">
+          <img src="assets/img/wellness.jpg" alt="Wellness Wave counselling website" loading="lazy">
+        </a>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Brand site · Live</span><span>wellnesswave.org.in</span></div>
+          <h3>Wellness Wave</h3>
+          <p>Counselling and energy-healing practice. Calm editorial typography, session booking, discovery-call flow over WhatsApp.</p>
+          <ul class="card__tags mono"><li>Design</li><li>Booking</li><li>SEO</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-crm">
+            <div class="ui-crm__bar"><span></span><span></span><span></span><b>Creator OS · Deals</b></div>
+            <div class="ui-crm__rows">
+              <div class="ui-crm__row"><i style="--c:#8ec5ff"></i><span>Nykaa · Reel + 3 stories</span><em>₹1,20,000</em><b class="st st--won">Signed</b></div>
+              <div class="ui-crm__row"><i style="--c:#ff6b1a"></i><span>boAt · Launch collab</span><em>₹85,000</em><b class="st st--neg">Negotiating</b></div>
+              <div class="ui-crm__row"><i style="--c:#c9f0a4"></i><span>Mamaearth · UGC x4</span><em>₹60,000</em><b class="st">Invoice sent</b></div>
+              <div class="ui-crm__row"><i style="--c:#f3efe4"></i><span>Zomato · Story</span><em>₹25,000</em><b class="st">Draft reply</b></div>
+            </div>
+            <div class="ui-crm__ai mono"><span class="dot-live"></span>AI drafted reply · awaiting one-tap approval</div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Product · AI co-pilot</span><span>Next.js · NestJS · Claude</span></div>
+          <h3>Creator OS</h3>
+          <p>Content, deal back-office and analytics for independent creators. Persona-tuned scripting, Gmail inbox with AI-drafted replies gated by approval, invoicing, wardrobe try-on pipeline. Never posts, never sends without a tap.</p>
+          <ul class="card__tags mono"><li>Agents</li><li>CRM</li><li>Supabase</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-alert">
+            <div class="ui-alert__eyebrow mono">OFFICE CCTV ALERT · MEETING</div>
+            <h4>Meeting room — meeting</h4>
+            <p>Meeting started in the Meeting Room (3 people).</p>
+            <dl class="mono"><dt>When</dt><dd id="alertTime">Mon 27 Jul 2026, 15:44:23</dd><dt>Camera</dt><dd>Meeting Room</dd></dl>
+            <div class="ui-alert__cam">
+              <span class="ui-alert__box b1"></span><span class="ui-alert__box b2"></span><span class="ui-alert__box b3"></span>
+              <span class="mono ui-alert__stamp">CAM 01 · 0.98</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Computer vision · Internal tool</span><span>YOLO · Python · Email</span></div>
+          <h3>Office CCTV intelligence</h3>
+          <p>Person detection on the office camera feed, room-state logic, and alerts with a snapshot when a meeting starts or the room empties. Faces blurred before anything leaves the machine.</p>
+          <ul class="card__tags mono"><li>Vision</li><li>Alerts</li><li>Privacy</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="Play">
+        <div class="card__media card__media--video">
+          <video class="hovervid" src="assets/video/autoedit.mp4" poster="assets/img/autoedit-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/autoedit.mp4" data-title="Auto-edit pipeline output"></video>
+          <span class="card__play mono">▶ hover</span>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Pipeline · Video</span><span>Whisper · RVM · ffmpeg</span></div>
+          <h3>Raw footage to finished reel, automatically</h3>
+          <p>Drop in talking-head takes; the pipeline picks the best retake, removes the background, syncs captions from the transcript, adds motion graphics and exports a vertical short. Local, no subscriptions.</p>
+          <ul class="card__tags mono"><li>Auto-edit</li><li>Captions</li><li>Motion</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-dash">
+            <div class="ui-dash__kpis">
+              <div><span class="mono">Receivables</span><b>₹18.4L</b></div>
+              <div><span class="mono">Overdue &gt;60d</span><b class="warn">₹3.1L</b></div>
+              <div><span class="mono">Reminders sent</span><b>142</b></div>
+            </div>
+            <div class="ui-dash__bars"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:35%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:85%"></i><i style="--h:48%"></i><i style="--h:90%"></i><i style="--h:66%"></i><i style="--h:74%"></i><i style="--h:58%"></i><i style="--h:95%"></i></div>
+            <div class="ui-dash__ladder mono"><span>Day 0 · invoice</span><span>Day 7 · nudge</span><span>Day 15 · call</span><span class="hot">Day 30 · UPI link</span></div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Finance automation</span><span>TallyPrime · Postgres · TypeScript</span></div>
+          <h3>Receivables engine for a cosmetics distributor</h3>
+          <p>Mirrors TallyPrime into Postgres, auto-emails invoices, and runs a reminder ladder with UPI payment links until every bill settles. FIFO allocation, ageing buckets, staleness guards, 69 tests.</p>
+          <ul class="card__tags mono"><li>Tally</li><li>AR</li><li>Email</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media">
+          <img src="assets/img/citizen.jpg" alt="Citizen Helpdesk dashboard" loading="lazy">
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Dashboard · Governance</span><span>Maps · Analytics</span></div>
+          <h3>Citizen Helpdesk dashboard</h3>
+          <p>Complaint volume, resolution time, category heat and satisfaction on one screen for a political office. Built alongside the Ward 217 portal so the data flows in from day one.</p>
+          <ul class="card__tags mono"><li>Data viz</li><li>Civic</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-social">
+            <div class="ui-social__col"><span class="mono">Brief</span><p>"Launch post for the Diwali edit. Warm, no discount language."</p></div>
+            <div class="ui-social__arrow">→</div>
+            <div class="ui-social__col ui-social__out">
+              <span class="mono">Claude · brand voice + skill</span>
+              <p class="typing" data-type="Some evenings deserve a slower light. The Diwali edit is here: three hand-poured scents, one quiet room."></p>
+              <div class="ui-social__chips mono"><i>Instagram</i><i>LinkedIn</i><i>Pinterest</i><i>Cold email</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Marketing tool</span><span>React · Express · Claude streaming</span></div>
+          <h3>AI marketing dashboard</h3>
+          <p>Brand context plus 41 marketing skills drive streamed content for Instagram, LinkedIn and Pinterest, and cold-email sequences sent from the team's own Gmail.</p>
+          <ul class="card__tags mono"><li>Content</li><li>Email</li><li>Skills</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--3d">
+          <canvas id="cardCanvas" aria-hidden="true"></canvas>
+          <span class="mono card__3dlabel">Tower B · 14F · wireframe pass</span>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>3D · Real estate</span><span>Blender · WebGL</span></div>
+          <h3>3D real-estate visualisation</h3>
+          <p>Massing models, unit walkthroughs and marketing renders for property listings, plus product and packaging renders for brands. Modelled in Blender, delivered as stills, film and interactive web.</p>
+          <ul class="card__tags mono"><li>Blender</li><li>Three.js</li><li>Renders</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media">
+          <img src="assets/img/candle-grid.jpg" alt="Candle Culture signature collection" loading="lazy">
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Brand · Family business</span><span>Identity · Catalogue · Social automation</span></div>
+          <h3>Candle Culture</h3>
+          <p>Identity, catalogue, product photography direction and a monthly social pipeline that generates captions, designs and a content calendar for a small-batch candle studio.</p>
+          <ul class="card__tags mono"><li>Brand</li><li>Automation</li><li>Print</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-voice">
+            <div class="ui-voice__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="mono"><span class="you">You</span> “Jarvis, open Safari and tell me what time it is.”</p>
+            <p class="mono"><span class="jv">Jarvis</span> Safari is open. It's 7:42 in the evening.</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>Voice agent · macOS</span><span>Python · Tool use · TTS</span></div>
+          <h3>Jarvis</h3>
+          <p>Wake-word voice assistant that controls the Mac through tools: opens apps, finds files, runs commands, adjusts settings, and talks back. Any OpenAI-compatible model as the brain.</p>
+          <ul class="card__tags mono"><li>Voice</li><li>Tools</li><li>Local</li></ul>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="">
+        <div class="card__media card__media--ui">
+          <div class="ui-legal">
+            <div class="ui-legal__doc"><span></span><span></span><span class="flag"></span><span></span><span class="flag"></span><span></span><span></span></div>
+            <div class="ui-legal__side mono">
+              <b>Risk 7.8 / 10</b>
+              <i class="r-high">Unlimited liability · cl. 9.2</i>
+              <i class="r-mid">Auto-renewal · cl. 4.1</i>
+              <i class="r-low">Notice period · cl. 11</i>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta mono"><span>SaaS · Legal</span><span>Next.js · Claude · PDF</span></div>
+          <h3>Legal AI contract review</h3>
+          <p>Clause-by-clause risk scoring, missing-protection detection, plain-English translation and counter-proposal drafts, exported as a branded PDF report.</p>
+          <ul class="card__tags mono"><li>LLM</li><li>PDF</li><li>SaaS</li></ul>
+        </div>
+      </article>
+
+      <article class="card card--cta" data-cursor="">
+        <div class="card__body">
+          <span class="eyebrow mono">Also built</span>
+          <ul class="alsolist">
+            <li>FinTrack, an offline-first double-entry finance app</li>
+            <li>Multi-agent trading research dashboard</li>
+            <li>HR &amp; payroll on Frappe for a client</li>
+            <li>Instagram social pipeline for a candle brand</li>
+            <li>Anniversary micro-sites that play like a streaming app</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary magnetic" data-cursor=""><span>Start a project</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Reels ─────────── -->
+<section class="reels section" id="reels">
+  <div class="section__head">
+    <span class="eyebrow mono">AI film</span>
+    <h2 class="h2 split-words">Generated, directed, cut. Hover to play, click for sound.</h2>
+    <p class="section__sub">Brand films, UGC-style ads and shorts made with Veo, Kling and Sora, then edited like a real spot. Every frame here is AI-generated or AI-edited.</p>
+  </div>
+  <div class="reels__row">
+    <figure class="reel" data-cursor="Play">
+      <video class="hovervid" src="assets/video/spiderman.mp4" poster="assets/img/spiderman-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/spiderman.mp4" data-title="Spider-Man in Mumbai — AI short film"></video>
+      <figcaption><b>Spider-Man in Mumbai</b><span class="mono">AI short film · Veo · 68s</span></figcaption>
+    </figure>
+    <figure class="reel" data-cursor="Play">
+      <video class="hovervid" src="assets/video/jumboking.mp4" poster="assets/img/jumboking-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/jumboking.mp4" data-title="JumboKing — 25 years brand film"></video>
+      <figcaption><b>JumboKing, 25 years</b><span class="mono">Brand film · concept to cut · 54s</span></figcaption>
+    </figure>
+    <figure class="reel" data-cursor="Play">
+      <video class="hovervid" src="assets/video/aroma.mp4" poster="assets/img/aroma-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/aroma.mp4" data-title="Aroma Magic — neem face wash UGC ad"></video>
+      <figcaption><b>Aroma Magic, neem face wash</b><span class="mono">UGC ad · AI presenter · 38s</span></figcaption>
+    </figure>
+    <figure class="reel" data-cursor="Play">
+      <video class="hovervid" src="assets/video/candle.mp4" poster="assets/img/candle-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/candle.mp4" data-title="Candle Culture — coffee edit"></video>
+      <figcaption><b>Candle Culture, coffee edit</b><span class="mono">Product cinematic · Kling · 5s</span></figcaption>
+    </figure>
+    <figure class="reel" data-cursor="Play">
+      <video class="hovervid" src="assets/video/autoedit.mp4" poster="assets/img/autoedit-poster.jpg" muted loop playsinline preload="none" data-full="assets/video/autoedit.mp4" data-title="Auto-edited explainer reel"></video>
+      <figcaption><b>Auto-edited explainer</b><span class="mono">Pipeline output · captions · 42s</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ─────────── Stack ─────────── -->
+<section class="stack" id="stack" aria-label="Tools and stack">
+  <div class="stack__row" data-dir="1"><div><span>Python</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>LangChain</span><span>RAG</span><span>n8n</span><span>Make</span><span>REST APIs</span><span>Whisper</span><span>YOLO</span><span>Python</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>LangChain</span><span>RAG</span><span>n8n</span><span>Make</span><span>REST APIs</span><span>Whisper</span><span>YOLO</span></div></div>
+  <div class="stack__row" data-dir="-1"><div><span>Next.js</span><span>NestJS</span><span>TypeScript</span><span>Supabase</span><span>Prisma</span><span>Postgres</span><span>React Native</span><span>Frappe</span><span>Three.js</span><span>GSAP</span><span>Vercel</span><span>Next.js</span><span>NestJS</span><span>TypeScript</span><span>Supabase</span><span>Prisma</span><span>Postgres</span><span>React Native</span><span>Frappe</span><span>Three.js</span><span>GSAP</span><span>Vercel</span></div></div>
+  <div class="stack__row" data-dir="1"><div><span>Veo</span><span>Kling</span><span>Sora</span><span>ComfyUI</span><span>Blender</span><span>ffmpeg</span><span>DaVinci</span><span>Figma</span><span>Canva</span><span>Meta Ads</span><span>TallyPrime</span><span>Veo</span><span>Kling</span><span>Sora</span><span>ComfyUI</span><span>Blender</span><span>ffmpeg</span><span>DaVinci</span><span>Figma</span><span>Canva</span><span>Meta Ads</span><span>TallyPrime</span></div></div>
+</section>
+
+<!-- ─────────── Experience ─────────── -->
+<section class="exp section" id="experience">
+  <div class="section__head">
+    <span class="eyebrow mono">Experience</span>
+    <h2 class="h2 split-words">From brand rooms to build rooms.</h2>
+  </div>
+  <ol class="timeline">
+    <li class="tl-item">
+      <span class="tl-item__date mono">Apr 2026 — now</span>
+      <div class="tl-item__body">
+        <h3>Associate Manager <em>Illuminati Media, Mumbai</em></h3>
+        <p>Architecting AI-native workflows: production prompt frameworks, multi-step agents, RAG systems, data extraction pipelines, and frontier-model integration with cost-efficient routing and evals. Shipping internal tools with day-one usability.</p>
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-item__date mono">Jan — Apr 2026</span>
+      <div class="tl-item__body">
+        <h3>Artificial Intelligence Intern <em>Illuminati Media</em></h3>
+        <p>Standardised messy datasets, built automated workflows and implemented AI solutions for media and marketing use cases.</p>
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-item__date mono">Sep — Dec 2025</span>
+      <div class="tl-item__body">
+        <h3>Brand Strategy &amp; Partnerships Intern <em>Wondrlab India</em></h3>
+        <p>Creator partnerships from briefing call to final cut. Campaign storytelling aligned to cultural moments, including the Indigo Paints Onam campaign.</p>
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-item__date mono">Jun 2024 — Apr 2025</span>
+      <div class="tl-item__body">
+        <h3>Marketing Team <em>Atelier Ashiesh Shah</em></h3>
+        <p>Social media, website and digital strategy for a luxury design atelier; contributed to sales at the AJIO LUX exhibition and learned high-end positioning up close.</p>
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-item__date mono">Ongoing</span>
+      <div class="tl-item__body">
+        <h3>Brand &amp; Growth <em>Candle Culture</em></h3>
+        <p>Positioning, partnerships, promotions and the automation behind a family-run candle studio.</p>
+      </div>
+    </li>
+    <li class="tl-item tl-item--edu">
+      <span class="tl-item__date mono">2023 — 2026</span>
+      <div class="tl-item__body">
+        <h3>Bachelor of Management Studies <em>University of Mumbai</em></h3>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ─────────── Contact ─────────── -->
+<section class="contact section" id="contact">
+  <div class="contact__inner">
+    <span class="eyebrow mono">Contact</span>
+    <h2 class="contact__title">
+      <span class="split">Have something</span>
+      <span class="split">worth building?</span>
+    </h2>
+    <p class="contact__sub">Agents, automations, a film, a site, a dashboard, or all of it. Tell me what's slow or what's boring and I'll show you what it looks like automated and cinematic.</p>
+    <div class="contact__actions">
+      <a class="btn btn--primary btn--lg magnetic copy-email" href="mailto:uditpunjabi234@gmail.com" data-cursor="Copy" data-copy="uditpunjabi234@gmail.com"><span>uditpunjabi234@gmail.com</span></a>
+      <a class="btn btn--ghost btn--lg magnetic" href="https://wa.me/917600816559" target="_blank" rel="noopener" data-cursor="Chat"><span>WhatsApp +91 76008 16559</span></a>
+    </div>
+    <ul class="contact__social mono">
+      <li><a href="https://www.linkedin.com/in/udit-punjabi-63212b277" target="_blank" rel="noopener" data-cursor="">LinkedIn ↗</a></li>
+      <li><a href="https://www.instagram.com/uditpunjabi7/" target="_blank" rel="noopener" data-cursor="">Instagram ↗</a></li>
+      <li><a href="tel:+917600816559" data-cursor="">+91 76008 16559</a></li>
+    </ul>
+  </div>
+  <footer class="footer mono">
+    <span>© 2026 Udit Punjabi · Mumbai</span>
+    <span>Local time <span id="footClock">--:--:--</span> IST</span>
+    <span>Designed &amp; built by me</span>
+  </footer>
+</section>
+
+</main>
+
+<!-- ─────────── Lightbox ─────────── -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Video player">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox__inner">
+    <video id="lightboxVideo" controls playsinline></video>
+    <p class="lightbox__title mono" id="lightboxTitle"></p>
+  </div>
+</div>
+
+<div class="toast mono" id="toast" role="status" aria-live="polite">Copied</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/hero3d.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
